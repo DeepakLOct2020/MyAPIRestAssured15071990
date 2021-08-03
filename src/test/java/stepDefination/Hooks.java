@@ -16,6 +16,20 @@ public class Hooks {
 		m.verify_place_id_created_maps_to_using("Deepak", "GetPlaceAPIResource");
 		
 		}
+		
+	}
+		@Before("@GetPlace")
+		public void beforeScenario1() throws Throwable {
+			
+			AddPlaceStepDef m = new AddPlaceStepDef();
+			
+			if(AddPlaceStepDef.place_Id == null) {
+
+			m.add_Place_Payload_with("Ravi", "Test", "Hello");
+			m.user_calls_with_Http_Request("GetPlaceAPIResource", "GET");
+			m.verify_place_id_created_maps_to_using("Ravi", "GetPlaceAPIResource");
+			
+			}
 	
 	}
 

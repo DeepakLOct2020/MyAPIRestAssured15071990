@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2022570400,
+              "duration": 2195103000,
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 3368086400,
+              "duration": 3185288500,
               "status": "passed"
             },
             "line": 6,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 5349300,
+              "duration": 4656100,
               "status": "passed"
             },
             "line": 7,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 1085620500,
+              "duration": 1915377600,
               "status": "passed"
             },
             "line": 8,
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 27193300,
+              "duration": 21304100,
               "status": "passed"
             },
             "line": 9,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 1996974900,
+              "duration": 2064743400,
               "status": "passed"
             },
             "line": 10,
@@ -155,116 +155,6 @@
           {
             "line": 3,
             "name": "@AddPlace"
-          }
-        ]
-      },
-      {
-        "comments": [
-          {
-            "line": 15,
-            "value": "#\t|BBhouse | German\t| Badnera Amravati \t |"
-          },
-          {
-            "line": 16,
-            "value": "#\t|CChouse | French\t| Nagpur             |"
-          }
-        ],
-        "before": [
-          {
-            "result": {
-              "duration": 155500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "Verify if Delete Place functionality is working",
-        "description": "",
-        "id": "validating-place-apis;verify-if-delete-place-functionality-is-working",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 58304400,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Delete Place Payload",
-            "match": {
-              "location": "AddPlaceStepDef.delete_Place_Payload()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2204933800,
-              "error_message": "java.lang.NullPointerException\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$spec(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy:76)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy)\r\n\tat stepDefination.AddPlaceStepDef.user_calls_with_Http_Request(AddPlaceStepDef.java:75)\r\n\tat ✽.When user calls \"DeletePlaceAPIResource\" with \"POST\" Http Request(src/test/java/features/placeValidation.feature:23)\r\n",
-              "status": "failed"
-            },
-            "line": 23,
-            "name": "user calls \"DeletePlaceAPIResource\" with \"POST\" Http Request",
-            "match": {
-              "arguments": [
-                {
-                  "val": "DeletePlaceAPIResource",
-                  "offset": 12
-                },
-                {
-                  "val": "POST",
-                  "offset": 42
-                }
-              ],
-              "location": "AddPlaceStepDef.user_calls_with_Http_Request(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 24,
-            "name": "the API call success with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 38
-                }
-              ],
-              "location": "AddPlaceStepDef.the_API_call_success_with_status_code(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 25,
-            "name": "\"status\" in response body is \"OK\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "status",
-                  "offset": 1
-                },
-                {
-                  "val": "OK",
-                  "offset": 30
-                }
-              ],
-              "location": "AddPlaceStepDef.in_response_body_is(String,String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 19,
-            "name": "@DeletePlace"
           }
         ]
       }

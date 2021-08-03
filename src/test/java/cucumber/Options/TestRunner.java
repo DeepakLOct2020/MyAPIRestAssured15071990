@@ -24,9 +24,9 @@ import cucumber.api.junit.Cucumber;
 		monochrome=true,
 		
 		//CHECK IF ALL METHODS ARE IMPLEMENTED
-		 dryRun=false
+		 dryRun=false,
 		 
-		// tags = {"@DeletePlace"}
+		 tags = {"@AddPlace"}
 		
 )
 public class TestRunner {
