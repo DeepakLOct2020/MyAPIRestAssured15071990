@@ -121,12 +121,12 @@ public class AddPlaceStepDef extends Utils {
 	@Given("^Delete Place Payload$")
 	public void delete_Place_Payload() throws Throwable {
 		
-		String payload = TestDataPayloads.readTextFileUsingFilesClass("G:\\Technocredits\\Project\\Java_Program\\Eclipse_Practice\\Java Practice\\MyAPINewFrameworkIndustryStd\\src\\test\\java\\resources\\fileblock\\deletePlacePayload.txt");
+		String payload = TestDataPayloads.readTextFileUsingFilesClass("src/test/java/resources/fileblock/deletePlacePayload.txt");
 		System.out.println(payload);
 		String updatedPayload = payload.replaceAll("@Place_Id@", place_Id);
 		System.out.println(updatedPayload);
 		
-		res = given().spec(requestSpecification()).body(updatedPayload);
+	//	res = given().spec(requestSpecification()).body(updatedPayload);
 	}
 
 

@@ -15,6 +15,13 @@ Examples:
 #	|BBhouse | German	| Badnera Amravati 	 |
 #	|CChouse | French	| Nagpur             |
 	
+	
+@GetPlace	
+Scenario: Verify if Get Place functionality is working
+	When user calls "GetPlaceAPIResource" with "GET" Http Request
+	Then the API call success with status code 200
+
+
 
 @DeletePlace
 Scenario: Verify if Delete Place functionality is working
